@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meeting note</title>
-    <link rel="icon" href="favicon.ico" />
-  </head>
-  <body>
-  </body>
+    <title>Meeting Notes</title>
+    <meta name="description" content="Meeting notes discussing the arrangement of next meeting">
+    <meta name="author" content="Mohan">
+    <link rel="icon" href="https://raw.githubusercontent.com/TeslaAngel/Lab2_Starter/refs/heads/main/favicon-192x192.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meeting Notes</h1>
+        <nav>
+            <a href="#attendees">Attendees</a> |
+            <a href="#agenda">Agenda</a> |
+            <a href="#discussion">Discussion</a> |
+            <a href="#next-meeting">Next Meeting</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="attendees">
+            <h2>Attendees</h2>
+            <ul>
+                <li><b>Attendee 1</b></li>
+                <li><strong>Not</strong> <i>Attendee 1</i></li>
+                <li>Claims to be <i>Attendee 1</i></li>
+                <li>Claims <em>one</em> Attendee is lying</li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>review agenda of last meeting</li>
+                <li>set up agenda for the next meeting, which is planning the agenda for the next next meeting</li>
+                <li>24 hour pizza party</li>
+            </ol>
+        </section>
+
+        <section id="discussion">
+            <h2>Discussion Summary</h2>
+            <p>
+                <strong>The timeline</strong> was <em>adjusted</em> to allow more time for meeting planning.<br>
+                The planning for next meeting was approved by the team, which is planning the agenda for next next meeting<br>
+            </p>
+        </section>
+
+        <section id="next-meeting">
+            <h2>Next Meeting Arrangement</h2>
+            <p><b>Date:</b> Yesterday</p>
+            <p><b>Time:</b> Any time between 10:00 AM - 10:01 AM</p>
+            <p><b>Location:</b> Any random video call software</p>
+            <p><b>Agenda:</b> planning the agenda for next next meeting</p>
+
+            <details>
+                <summary>Show Meeting Link</summary>
+                <p>Link: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Meeting Portal</a></p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Image & Media</h2>
+            <p>Below is the screenshot from the meeting:</p>
+            <img src="https://i.pinimg.com/474x/2f/e4/15/2fe415d0033814b52a99c7650f2795eb.jpg" alt="Meeting screenshot">
+            <p>Meeting BGM:</p>
+            <audio controls>
+                <source src="https://TeslaAngel.org/audiopending.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p>Video update:</p>
+            <video width="320" height="240" controls>
+                <source src="https://TeslaAngel.org/videopending.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+    <section>
+        <h2>Form Section</h2>
+        <form>
+            <fieldset>
+                <legend>Feedback Form</legend>
+
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username"><br><br>
+
+                <label for="meeting-date">Preferred date for future meetings:</label>
+                <input type="date" id="meeting-date" name="meeting-date"><br><br>
+
+                <label for="team">Choose your team:</label>
+                <select id="team" name="team">
+                    <option value="md">Meeting Design</option>
+                    <option value="dm">Design Meeting</option>
+                    <option value="pe">Pizza Enjoyer</option>
+                </select><br><br>
+
+                <label for="mood">How was the meeting?</label>
+                <input list="moods" id="mood" name="mood">
+                <datalist id="moods">
+                    <option value="Great">
+                    <option value="Okay">
+                    <option value="Could be better">
+                </datalist><br><br>
+
+                <p>Would you like to present next time?</p>
+                <input type="radio" id="yes" name="present" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="present" value="no">
+                <label for="no">No</label><br><br>
+
+                <input type="checkbox" id="reminder" name="reminder">
+                <label for="reminder">Send me a reminder email</label><br><br>
+
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <section>
+        <h3>So why does this meeting exists after all</h3>
+        <div>No <span>Body</span> really <span>knows</span> , maybe it's just fun</div>
+    </section>
+</main>
+
+    <footer>
+        <hr>
+        <p>&copy; Mohan</p>
+    </footer>
+
+</body>
 </html>
