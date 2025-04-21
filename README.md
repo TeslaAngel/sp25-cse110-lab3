@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3!
 
-URL to site: https://teslaangel.github.io/Lab2_Starter/
+URL to site: https://teslaangel.github.io/sp25-cse110-lab3/
