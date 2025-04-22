@@ -1,0 +1,99 @@
+  /* General Settings with Universal Selector */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* CSS Variables with fallback */
+  :root {
+    --primary-color: #4b9cd3;
+    --text-color: rgb(33, 33, 33);
+    --accent-color: hsl(200, 80%, 50%);
+    --fallback-color: color(display-p3 1 0.5 0.2 / 1);
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    color: var(--text-color, black);
+    line-height: 1.6;
+    padding: 2rem;
+    margin: auto;
+    max-width: 900px;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: color-mix(in srgb, orange 70%, white 30%);
+    padding: 2em;
+    border-bottom: 3px solid color(display-p3 0.2 0.5 0.8 / 1);
+    text-align: center;
+  }
+  
+  /* Element selector */
+  h1, h2, h3 {
+    color: var(--primary-color, blue);
+  }
+  
+  /* Selector list */
+  ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+  }
+  
+  /* ID selector */
+  #attendees {
+    background-color: rgba(255, 165, 0, 0.2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Class selector */
+  .note-highlight {
+    background-color: yellow;
+  }
+  
+  /* Attribute selector */
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  /* Descendant combinator */
+  section p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Child combinator */
+  section > h2 {
+    margin-top: 1.5em;
+    font-size: 1.5rem;
+  }
+  
+  /* General sibling combinator */
+  h2 ~ p {
+    font-style: italic;
+  }
+  
+  /* Adjacent sibling combinator */
+  label + input {
+    margin-top: 0.25rem;
+  }
+  
+  /* Combining two selectors */
+  p.note-highlight {
+    font-weight: bold;
+  }
+  
+  /* Pseudo-class selector */
+  a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  button:active {
+    background-color: hsl(0, 100%, 80%);
+  }
+  
