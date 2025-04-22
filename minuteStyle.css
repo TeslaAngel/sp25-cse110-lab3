@@ -1,0 +1,246 @@
+  /* General Settings with Universal Selector */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* CSS Variables with fallback */
+  :root {
+    --primary-color: #4b9cd3;
+    --text-color: rgb(33, 33, 33);
+    --accent-color: hsl(200, 80%, 50%);
+    --fallback-color: color(display-p3 1 0.5 0.2 / 1);
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: var(--text-color, black);
+    line-height: 1.6;
+    padding: 2rem;
+    margin: auto;
+    max-width: 900px;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: color-mix(in srgb, orange 70%, white 30%);
+    padding: 2em;
+    border-bottom: 3px solid color(display-p3 0.2 0.5 0.8 / 1);
+    text-align: center;
+  }
+  
+  /* Element selector */
+  h1, h2, h3 {
+    color: var(--primary-color, blue);
+  }
+  
+  /* Selector list */
+  ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+  }
+  
+  /* ID selector */
+  #attendees {
+    background-color: rgba(255, 165, 0, 0.2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Class selector */
+  .note-highlight {
+    background-color: yellow;
+  }
+  
+  /* Attribute selector */
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  /* Descendant combinator */
+  section p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Child combinator */
+  section > h2 {
+    margin-top: 1.5em;
+    font-size: 1.5rem;
+  }
+  
+  /* General sibling combinator */
+  h2 ~ p {
+    font-style: italic;
+  }
+  
+  /* Adjacent sibling combinator */
+  label + input {
+    margin-top: 0.25rem;
+  }
+  
+  /* Combining two selectors */
+  p.note-highlight {
+    font-weight: bold;
+  }
+  
+  /* Pseudo-class selector */
+  a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  button:active {
+    background-color: hsl(0, 100%, 80%);
+  }
+  
+  /* Display */
+  details, img {
+    display: block;
+  }
+  
+  /* Flexbox layout */
+  nav {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  /* Flexbox properties */
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  
+  /* Grid layout */
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    justify-items: stretch;
+  }
+  
+  /* Grid properties */
+  fieldset {
+    grid-column: 1 / -1;
+    padding: 1rem;
+    border: 2px solid var(--accent-color, orange);
+    border-radius: 10px;
+  }
+  
+  /* Margin longhand */
+  footer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
+  /* Margin shorthand */
+  header nav {
+    margin: 1rem 0 1rem 0;
+  }
+  
+  /* Padding longhand */
+  section {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  
+  /* Padding shorthand */
+  footer p {
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Border properties */
+  img {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Relative Units */
+  nav a {
+    font-size: 1.2em;
+    padding: 0.5rem;
+  }
+  
+  /* Absolute Units */
+  video {
+    width: 320px;
+    height: 240px;
+    margin-top: 20px;
+  }
+  
+  /* Even More units! */
+  audio {
+    width: 90%;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 1rem auto;
+  }
+  
+  /* For common paragraphs and list elements */
+  p, li {
+    color: #333;
+    text-align: left;
+  }
+  
+
+  a {
+    color: hsl(210, 90%, 40%);
+    text-decoration: none;
+  }
+  
+  /* Image Settings (just position tbh) */
+  img {
+    position: relative;
+  }
+  
+  footer {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* :has() selector */
+  section:has(img) {
+    background-color: hsla(0, 0%, 90%, 0.4);
+  }
+  
+  /* Nested selector */
+  section {
+    & p {
+      line-height: 1.5;
+    }
+  }
